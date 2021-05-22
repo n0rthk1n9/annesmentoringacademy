@@ -19,27 +19,29 @@ export function Products({ prices }): JSX.Element {
 
   return (
     <div>
-      <section className="flex flex-col lg:flex-row items-start items-center lg:justify-center w-full w-full lg:px-10 py-12 ">
+      <section className="flex flex-col lg:flex-row items-start items-center lg:justify-center w-full w-full">
         {prices.map((price) => (
           <article
             key={price.id}
-            className={`w-4/5 lg:w-custom mb-10 lg:px-4 px-6 py-10 text-center rounded-lg ${
+            className={`w-4/5 lg:w-custom mb-4 lg:px-4 px-6 py-10 text-center rounded-lg mr-0 md:mr-5 lg:mr-6 ${
               ((price.unit_amount as number) / 100).toFixed(2) == "200.00"
                 ? "text-white"
-                : "text-primary-dark"
+                : "bg-white text-primary-dark"
             } `}
             style={
               ((price.unit_amount as number) / 100).toFixed(2) == "200.00"
                 ? {
                     backgroundImage:
-                      "linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%)",
+                      "linear-gradient(90deg, #38908F 0%, #5E96AE 100%)",
                   }
                 : {
                     backgroundImage: "none",
                   }
             }
           >
-            <h5 className="font-bold text-base">{price.product.name}</h5>
+            <h5 className="font-bold text-base mb-2 md:mb-4 lg:mb-6">
+              {price.product.name}
+            </h5>
             <h2 className="pb-4 flex justify-center font-bold border-b border-gray-300">
               <span className="text-6xl">
                 {((price.unit_amount as number) / 100).toFixed(2)}
@@ -54,7 +56,7 @@ export function Products({ prices }): JSX.Element {
             <button
               className={`uppercase text-center text-sm mt-12 xl:px-24 px-12 sm:px-16 py-2 font-bold  rounded-md ${
                 ((price.unit_amount as number) / 100).toFixed(2) == "200.00"
-                  ? "bg-primary-very-light text-primary-blue"
+                  ? "bg-primary-very-light text-black"
                   : "text-primary-very-light"
               }`}
               style={
@@ -64,7 +66,7 @@ export function Products({ prices }): JSX.Element {
                     }
                   : {
                       backgroundImage:
-                        "linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%)",
+                        "linear-gradient(90deg, #38908F 0%, #5E96AE 100%)",
                     }
               }
               role="link"

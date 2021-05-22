@@ -2,7 +2,7 @@ import { CustomerFeedbackCard } from "../CustomerFeedbackCard";
 
 export function CustomerFeedback(): JSX.Element {
   return (
-    <div className="flex flex-col md:flex-row p-2 md:p-6 max-w mx-2 md:mx-20 my-2 md:my-20 rounded-xl shadow-md items-center bg-fawn space-x-0 md:space-x-5 space-y-2 md:space-y-0">
+    <div className="bg-primary-terracotta flex flex-col p-2 md:p-6 max-w mx-2 md:mx-20 my-2 md:my-20 rounded-xl shadow-md items-center">
       <CustomerFeedbackCard
         content="Super, habe ein Motivationsschreiben für eine Studienplatzbewerbung schreiben müssen. Annes
   Tipps im How-To Guide waren sehr hilfreich, sowas hab ich im Abi einfach nicht gelernt."

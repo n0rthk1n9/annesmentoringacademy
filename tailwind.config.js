@@ -10,6 +10,11 @@ module.exports = {
           light: "hsl(234, 14%, 74%)",
           normal: "hsl(233, 13%, 49%)",
           dark: "hsl(232, 13%, 33%)",
+          petrol: "#38908F",
+          "blue-gray": "#5E96AE",
+          "light-terracotta": "#FFBFA3",
+          terracotta: "#E08963",
+          sand: "#DFC7C1",
         },
       },
       width: {

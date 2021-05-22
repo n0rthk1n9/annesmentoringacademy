@@ -1,6 +1,6 @@
 export function ProductFacts(): JSX.Element {
   return (
-    <div className="p-2 md:p-6 max-w mx-2 md:mx-20 my-2 md:my-20 rounded-xl shadow-md items-center bg-fawn space-y-2 md:space-y-5">
+    <div className="bg-primary-blue-gray text-white p-2 md:p-6 max-w mx-2 md:mx-20 my-2 md:my-20 rounded-xl shadow-md items-center bg-fawn space-y-2 md:space-y-5">
       <h1>Facts zum How-To Guide für dein Motivationsschreiben:</h1>
       <ul className="list-disc">
         <li>

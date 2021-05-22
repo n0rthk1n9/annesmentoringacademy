@@ -1,6 +1,6 @@
 export function ProductPreview(): JSX.Element {
   return (
-    <div className="p-2 md:p-6 max-w mx-2 md:mx-20 my-2 md:my-20 rounded-xl shadow-md items-center bg-fawn space-y-2 md:space-y-5">
+    <div className="bg-primary-terracotta text-white p-2 md:p-6 max-w mx-2 md:mx-20 my-2 md:my-20 rounded-xl shadow-md items-center bg-fawn space-y-2 md:space-y-5">
       <h1>Sneak Peak</h1>
       <h2>Einen Einblick in den How-To Guide</h2>
       <ul className="list-none">
