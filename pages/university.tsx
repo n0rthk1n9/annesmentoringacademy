@@ -40,7 +40,12 @@ function University({ prices }) {
 }
 
 export async function getServerSideProps() {
-  const { prices } = await fetch("http://localhost:3000/api/prices", {
+  const apiURL =
+    process.env.NODE_ENV == "development"
+      ? "http://localhost:3000/api/prices"
+      : "https://annesmentoring.academy/api/prices";
+
+  const { prices } = await fetch(apiURL, {
     method: "GET",
     headers: {
       "content-type": "application/json",
