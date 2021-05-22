@@ -1,9 +1,3 @@
-import { Product } from "../components/Product";
-
 export default function Home() {
-  return (
-    <div>
-      <Product />
-    </div>
-  );
+  return <div>Foo</div>;
 }
