@@ -8,12 +8,12 @@ export function Products({ prices }): JSX.Element {
           <article
             key={price.id}
             className={`w-4/5 lg:w-custom mb-10 lg:px-4 px-6 py-10 text-center rounded-lg ${
-              ((price.unit_amount as number) / 100).toFixed(2) == "120.00"
+              ((price.unit_amount as number) / 100).toFixed(2) == "200.00"
                 ? "text-white"
                 : "text-primary-dark"
             } `}
             style={
-              ((price.unit_amount as number) / 100).toFixed(2) == "120.00"
+              ((price.unit_amount as number) / 100).toFixed(2) == "200.00"
                 ? {
                     backgroundImage:
                       "linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%)",
@@ -37,12 +37,12 @@ export function Products({ prices }): JSX.Element {
             </ul>
             <button
               className={`uppercase text-center text-sm mt-12 xl:px-24 px-12 sm:px-16 py-2 font-bold  rounded-md ${
-                ((price.unit_amount as number) / 100).toFixed(2) == "120.00"
+                ((price.unit_amount as number) / 100).toFixed(2) == "200.00"
                   ? "bg-primary-very-light text-primary-blue"
                   : "text-primary-very-light"
               }`}
               style={
-                ((price.unit_amount as number) / 100).toFixed(2) == "120.00"
+                ((price.unit_amount as number) / 100).toFixed(2) == "200.00"
                   ? {
                       backgroundImage: "none",
                     }

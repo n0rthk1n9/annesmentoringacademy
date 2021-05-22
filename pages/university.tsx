@@ -5,6 +5,7 @@ import { ProductPreview } from "../components/ProductPreview";
 import { SubscribeForm } from "../components/SubscribeForm";
 import { Products } from "../components/Products";
 import { loadStripe } from "@stripe/stripe-js";
+import { CustomerFeedback } from "../components/CustomerFeedback";
 
 const stripePromise = loadStripe(
   process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
@@ -32,11 +33,13 @@ function University({ prices }) {
       <SubscribeForm />
       <ProductPreview />
       <Products prices={prices} />
+      <SubscribeForm />
+      <CustomerFeedback />
     </div>
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const { prices } = await fetch("http://localhost:3000/api/prices", {
     method: "GET",
     headers: {
