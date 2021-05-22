@@ -1,6 +1,6 @@
 export function Motivation(): JSX.Element {
   return (
-    <div className="bg-primary-terracotta text-white p-2 md:p-6 max-w mx-2 md:mx-20 my-2 md:my-20 rounded-xl shadow-md items-center space-y-2 md:space-y-5">
+    <div className="bg-primary-petrol text-white p-2 md:p-6 max-w mx-2 md:mx-20 my-2 md:my-20 rounded-xl shadow-md items-center space-y-2 md:space-y-5">
       <h1>KEINE ANGST MEHR VOR MOTIVATIONSSCHREIBEN</h1>
       <p>
         Die Wissenschaftlerin in mir fing an nach Möglichkeiten zu suchen eine
