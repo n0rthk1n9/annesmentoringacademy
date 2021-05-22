@@ -1,6 +1,6 @@
 export function Introduction(): JSX.Element {
   return (
-    <div className="max-w p-2 md:p-6 mx-2 md:mx-20 my-2 md:my-20 rounded-xl shadow-md items-center bg-fawn">
+    <div className="max-w p-2 md:p-6 mx-2 md:mx-20 my-2 md:my-20 rounded-xl shadow-md items-center">
       <div className="mb-2 md:mb-5">
         <h1>
           OHNE SELBSTZWEIFEL UND STRESS ZUM MOTIVATIONSSCHREIBEN FÜR DEIN
