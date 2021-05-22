@@ -1,5 +1,6 @@
 import { Introduction } from "../components/Introduction";
 import { Motivation } from "../components/Motivation";
+import { ProductFacts } from "../components/ProductFacts";
 import { SubscribeForm } from "../components/SubscribeForm";
 
 function University() {
@@ -7,6 +8,8 @@ function University() {
     <div>
       <Introduction />
       <Motivation />
+      <SubscribeForm />
+      <ProductFacts />
       <SubscribeForm />
     </div>
   );
