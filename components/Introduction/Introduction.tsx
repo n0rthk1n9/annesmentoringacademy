@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export function Introduction(): JSX.Element {
   return (
     <div className="max-w p-2 md:p-6 mx-2 md:mx-20 my-2 md:my-20 rounded-xl shadow-md items-center bg-fawn">
@@ -11,7 +9,7 @@ export function Introduction(): JSX.Element {
       </div>
       <div className="flex flex-col md:flex-row space-x-0 md:space-x-5 space-y-2 md:space-y-0">
         <div className="flex-shrink-0">
-          <img className="h-24" src="/anne.png" alt="creatorImage" />
+          <img className="h-24" src="/memoji_anne.png" alt="creatorImage" />
         </div>
         <p className="flex-auto">
           Ich bin Anne, 28 Jahre alt und habe in einen Masterabschluss in
