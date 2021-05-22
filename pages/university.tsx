@@ -4,7 +4,7 @@ import { SubscribeForm } from "../components/SubscribeForm";
 
 function University() {
   return (
-    <div className="bg-dark-khaki">
+    <div>
       <Introduction />
       <Motivation />
       <SubscribeForm />
