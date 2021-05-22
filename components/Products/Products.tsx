@@ -1,6 +1,22 @@
-import products from "../../pages/api/products";
+import { loadStripe } from "@stripe/stripe-js";
+
+const stripePromise = loadStripe(
+  process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
+);
 
 export function Products({ prices }): JSX.Element {
+  const handlePayment = async (price: string) => {
+    const { sessionId } = await fetch("/api/checkout/session", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify({ quantity: 1, price }),
+    }).then((res) => res.json());
+    const stripe = await stripePromise;
+    const { error } = await stripe.redirectToCheckout({ sessionId });
+  };
+
   return (
     <div>
       <section className="flex flex-col lg:flex-row items-start items-center lg:justify-center w-full w-full lg:px-10 py-12 ">
@@ -51,6 +67,8 @@ export function Products({ prices }): JSX.Element {
                         "linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%)",
                     }
               }
+              role="link"
+              onClick={() => handlePayment(price.id)}
             >
               Kaufen
             </button>
