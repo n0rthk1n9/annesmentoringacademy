@@ -1,3 +1,9 @@
+import { Product } from "../components/Product";
+
 export default function Home() {
-  return <div className="bg-red-500">Hello Tailwind</div>;
+  return (
+    <div>
+      <Product />
+    </div>
+  );
 }
